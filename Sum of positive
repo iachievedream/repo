@@ -1,0 +1,56 @@
+c++
+
+#include <vector>
+
+int positive_sum (const std::vector<int> arr){
+  int sum=0;
+  for (int i=0;i<arr.size();i++){
+    if(arr[i]>0)
+      sum+=arr[i];
+    }
+  return sum;
+}
+*********************************************************
+javascrip
+
+function positiveSum(arr) {
+  var total = 0;    
+  for (i = 0; i < arr.length; i++) {    // setup loop to go through array of given length
+    if (arr[i] > 0) {                   // if arr[i] is greatter than zero
+      total += arr[i];                  // add arr[i] to total
+    }
+  }
+  return total;                         // return total
+}
+*********************************************************
+Python
+
+def positive_sum(arr):
+    sum = 0
+    for e in arr:
+        if e > 0:
+            sum = sum + e
+    return sum
+*********************************************************
+ def positive_sum(arr):
+    return sum(i for i in arr if i > 0)
+*********************************************************
+def positive_sum(arr):
+    return sum([i for i in arr if i==abs(i)])
+*********************************************************
+def positive_sum(arr):
+    return sum( max(i, 0) for i in arr )
+*********************************************************
+def positive_sum(list):
+    answer = 0
+    for numbers in list: 
+        if numbers > 0:
+            answer += numbers
+    return answer
+*********************************************************
+def positive_sum(arr):
+    summ = 0
+    for temp in arr :
+        if temp > 0 :
+            summ += temp
+    return summ
